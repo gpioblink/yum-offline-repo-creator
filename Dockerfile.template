@@ -1,0 +1,8 @@
+FROM centos:7.5.1804
+ENV reponame="centos7.5.1804"
+ENV repos="git nmap nc vim nano audit ausearch"
+
+ADD ./repo/run.sh /tmp/run.sh
+RUN chmod +x /tmp/run.sh
+CMD ["/tmp/run.sh"]
+VOLUME /home/president/repo
