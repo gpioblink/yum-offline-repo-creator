@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 IMAGE_NAMES=$@
 DOCKERFILE_TEMPLATE_PATH=./Dockerfile.template
-REPOS="git nmap nc vim nano audit ausearch"
+REPOS="git nmap nc vim nano audit ausearch" # downloading repos
 
 for IMAGE_NAME in $IMAGE_NAMES
 do
